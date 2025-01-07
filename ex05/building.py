@@ -1,5 +1,6 @@
 import sys
 
+
 def scan_text(text):
     """
     text (input string): The text to scan.
@@ -29,14 +30,15 @@ def scan_text(text):
     print(f"{digit_count} digits")
 
 
-
 def main():
     """
-        - Scanning the provided text and prints detailed information about its character composition.
+        - Scanning the provided text and prints detailed \
+            information about its character composition.
 
         - If no command-line argument is given, prompts the user to enter text.
 
-        - AssertionError: If more than one argument is provided via the command line.
+        - AssertionError: If more than one argument \
+            is provided via the command line.
     """
 
     try:
@@ -53,6 +55,7 @@ def main():
         scan_text(s)
     except AssertionError as error:
         print(AssertionError.__name__ + ":", error)
+
 
 if __name__ == "__main__":
     main()
